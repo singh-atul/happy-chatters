@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles for accessibility and smooth scrolling */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-text-primary antialiased;
+    font-size: 18px; /* Larger base font for readability */
+    line-height: 1.6;
+  }
+
+  /* Focus styles for keyboard navigation - WCAG compliant */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-pastel-blue-dark;
+  }
+
+  /* Skip link for screen readers */
+  .skip-link {
+    @apply absolute -top-full left-4 z-50 bg-pastel-blue-dark text-white px-4 py-2 rounded-xl font-semibold transition-all focus:top-4;
+  }
+}
+
+/* Reusable component classes */
+@layer components {
+  .section-padding {
+    @apply px-4 py-16 sm:px-6 lg:px-8 lg:py-24;
+  }
+
+  .container-narrow {
+    @apply max-w-4xl mx-auto;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .heading-1 {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-text-primary leading-tight;
+  }
+
+  .heading-2 {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-text-primary;
+  }
+
+  .heading-3 {
+    @apply text-xl sm:text-2xl font-display font-semibold text-text-primary;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-display font-semibold text-lg
+           bg-pastel-blue-dark text-white shadow-soft
+           hover:-translate-y-0.5 active:translate-y-0
+           transition-all duration-300
+           focus:outline-none focus:ring-2 focus:ring-pastel-blue-dark focus:ring-offset-2
+           min-h-[48px] min-w-[44px];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-display font-semibold text-lg
+           bg-pastel-yellow text-text-primary border-2 border-pastel-yellow-dark shadow-soft
+           hover:bg-pastel-yellow-dark hover:-translate-y-0.5 active:translate-y-0
+           transition-all duration-300
+           focus:outline-none focus:ring-2 focus:ring-pastel-yellow-dark focus:ring-offset-2;
+  }
+
+  .card-soft {
+    @apply bg-white rounded-[1.5rem] p-6 sm:p-8 shadow-soft hover:shadow-soft-lg transition-all duration-300
+           border-2 border-transparent hover:border-pastel-blue/30;
+  }
+}
