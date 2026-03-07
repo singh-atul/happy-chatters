@@ -5,6 +5,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { siteConfig } from '../data/content';
+import logoImg from '../assets/logo.png';
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -29,18 +30,22 @@ export default function Header() {
         className="container-wide section-padding flex items-center justify-between"
         aria-label="Main navigation"
       >
-        {/* Logo with friendly icon */}
+        {/* Logo */}
         <a
           href="#hero"
-          className="flex items-center gap-2 font-display font-bold text-xl sm:text-2xl text-text-primary hover:text-pastel-blue-dark transition-colors"
+          className="flex items-center gap-3 font-display font-bold text-xl sm:text-2xl text-text-primary hover:text-pastel-blue-dark transition-colors"
           aria-label={`${siteConfig.organizationName} - Home`}
         >
-          <span className="w-10 h-10 rounded-full bg-pastel-yellow flex items-center justify-center shadow-soft border-2 border-pastel-yellow-dark/30" aria-hidden="true">
-            <svg className="w-6 h-6 text-pastel-yellow-dark" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h2v2H7zm6 0h2v2h-2zm-3 4c1.66 0 3-1.34 3-3H9c0 1.66 1.34 3 3 3z" />
-            </svg>
+          <span className="flex h-16 items-center justify-center rounded-xl bg-white/80 px-2 shadow-sm">
+            <img
+              src={logoImg}
+              alt=""
+              className="h-14 w-auto max-h-14 object-contain block"
+              width={85}
+              height={56}
+            />
           </span>
-          {siteConfig.organizationName}
+          <span>{siteConfig.organizationName}</span>
         </a>
 
         {/* Desktop Navigation */}

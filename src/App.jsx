@@ -18,6 +18,7 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
+import Owner from './components/Owner';
 import Programs from './components/Programs';
 import WhyChooseUs from './components/WhyChooseUs';
 import Testimonials from './components/Testimonials';
@@ -41,6 +42,7 @@ function App() {
       <main id="main-content" role="main">
         <Hero />
         <About />
+        <Owner />
         <Programs />
         <WhyChooseUs />
         <Testimonials />

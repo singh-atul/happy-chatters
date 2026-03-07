@@ -1,6 +1,6 @@
 /**
  * Contact Section - Form and contact information
- * Form submissions are sent to support@happychatters.com via FormSubmit (formsubmit.co).
+ * Form submissions are sent to support@happychatters.in via FormSubmit (formsubmit.co).
  * Note: On first submission, FormSubmit sends an activation email to that address - the recipient must click the link to enable the form.
  */
 import { useState } from 'react';
@@ -27,7 +27,7 @@ export default function Contact() {
     formData.append('_subject', 'New message from Happy Chatters website');
     formData.append('_template', 'table');
 
-    const response = await fetch('https://formsubmit.co/support@happychatters.com', {
+    const response = await fetch(`https://formsubmit.co/${siteConfig.contact.email}`, {
       method: 'POST',
       body: formData,
       headers: { Accept: 'application/json' },

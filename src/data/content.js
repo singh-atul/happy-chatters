@@ -8,9 +8,9 @@ export const siteConfig = {
   organizationName: 'Happy Chatters',
   tagline: 'Empowering Every Child to Find Their Voice',
   contact: {
-    phone: '+1 (555) 123-4567',
-    email: 'hello@happychatters.org',
-    address: '123 Sunshine Avenue, Warm Community, CA 90210',
+    phone: '+91 99051 69960',
+    email: 'support@happychatters.in',
+    address: '26/4A Rajapur Prayagraj Uttar Pradesh, 211002',
   },
   social: {
     facebook: 'https://facebook.com/happychatters',
@@ -25,6 +25,13 @@ export const heroContent = {
   subtext: 'Specialized training and support for autistic children in a safe and nurturing environment.',
   primaryCTA: 'Enroll Now',
   secondaryCTA: 'Book a Consultation',
+};
+
+export const ownerContent = {
+  name: 'Our Founder',
+  title: 'Founder & Director',
+  bio: 'Passionate about empowering every child to find their voice through compassionate, evidence-based care. With years of experience in speech therapy and special education, our founder leads Happy Chatters with a vision of inclusive, family-centered support.',
+  image: '/owner.jpeg',
 };
 
 export const aboutContent = {

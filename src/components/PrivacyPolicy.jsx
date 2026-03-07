@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
             consent. All data is stored securely and used solely for the purpose of delivering our training and support services.
           </p>
           <p>
-            If you have questions about our privacy practices, please contact us at hello@happychatters.org.
+            If you have questions about our privacy practices, please contact us at support@happychatters.in.
           </p>
         </div>
       </div>
