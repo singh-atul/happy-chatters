@@ -28,7 +28,7 @@ export const heroContent = {
 };
 
 export const ownerContent = {
-  name: 'Our Founder',
+  name: 'Shivani Singh',
   title: 'Founder & Director',
   bio: 'Passionate about empowering every child to find their voice through compassionate, evidence-based care. With years of experience in speech therapy and special education, our founder leads Happy Chatters with a vision of inclusive, family-centered support.',
   image: '/owner.jpeg',
